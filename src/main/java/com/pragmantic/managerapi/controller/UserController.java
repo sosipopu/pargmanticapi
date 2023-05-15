@@ -47,7 +47,8 @@ public class UserController {
     public User updateUser(@RequestBody User user, @PathVariable ("id") Integer userId) {
         User existingUser = this.userRepository.findById(userId)
                 .orElseThrow();
-        existingUser.setName(user.getName());
+        existingUser.setFirstName(user.getFirstName());
+        existingUser.setLastName(user.getFirstName());
         existingUser.setEmail(user.getEmail());
         return this.userRepository.save(existingUser);
     }

@@ -1,9 +1,9 @@
 package com.pragmantic.managerapi.repository;
 
-import com.pragmantic.managerapi.entity.User;
+import com.pragmantic.managerapi.entity.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer> {
+public interface ProjectRepository extends JpaRepository<Project, Integer> {
 }
